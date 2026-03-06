@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Transporte:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Transporte_jar</output-path>
+    <root id="archive" name="Transporte.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Transporte" />
+    </root>
+  </artifact>
+</component>
