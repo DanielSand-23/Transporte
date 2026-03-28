@@ -9,18 +9,24 @@ public class Viaje {
     private LocalDate fechaRegreso;
     private String descripcionCarga;
     private double montoViaje;
-    private Vehiculo vehiculo;
 
-    public Viaje(String ciudadDestino, String direccion, LocalDate fechaViaje,
-                 LocalDate fechaRegreso, String descripcionCarga, double montoViaje, Vehiculo vehiculo) {
+    public Viaje(String ciudadDestino, String direccion, LocalDate fechaViaje, LocalDate fechaRegreso, String descripcionCarga, double montoViaje) {
         this.ciudadDestino = ciudadDestino;
         this.direccion = direccion;
         this.fechaViaje = fechaViaje;
         this.fechaRegreso = fechaRegreso;
         this.descripcionCarga = descripcionCarga;
         this.montoViaje = montoViaje;
-        this.vehiculo = vehiculo;
-        vehiculo.agregarViaje(this);
+    }
+
+    public void setFechaViaje (LocalDate fecha)
+    {
+        this.fechaViaje = fecha;
+    }
+
+    public void setFechaRegreso (LocalDate fecha)
+    {
+        this.fechaRegreso = fecha;
     }
 
     public String getCiudadDestino() {
